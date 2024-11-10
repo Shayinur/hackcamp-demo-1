@@ -96,4 +96,3 @@ backButton.addEventListener('click', () => {
   charityList.classList.add('hidden');
 });
 
-
