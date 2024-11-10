@@ -32,7 +32,7 @@
     transition: color 0.3s;
 }
   body {
-    background-color: white;
+    background-color: #ffffff;
     color: black;
     text-align: center;
     margin: 0;
@@ -63,7 +63,7 @@
   
   
   button {
-    background-color: #1ed760;
+    background-color: #DCD2D3;
     color: #121212;
     border: none;
     padding: 10px 20px;
@@ -91,6 +91,7 @@
   
 /* Sidebar styles */
 .sidebar {
+<<<<<<< HEAD
     position: fixed;
     top: 40px;
     right: -300px;
@@ -102,6 +103,20 @@
     transition: right 0.3s ease;
     z-index: 900;
   }
+=======
+  position: fixed;
+  top: 60px;
+  right: -300px;
+  width: 300px;
+  height: calc(100% - 60px);
+  background-color: #f0f0f0;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: right 0.3s ease;
+  border-radius: 20px;
+  z-index 0;  
+}
+>>>>>>> bda03e1e79498cf71cd51ae0af7b0bb5a054d607
   
   .sidebar h2 {
     color: #1a1a2e;
@@ -122,6 +137,7 @@
     right: 0;
   }
 
+<<<<<<< HEAD
 
   /* Hide the charity list initially */
 
@@ -147,5 +163,52 @@
   
  
   
+=======
+   /* Animated mesh background */
+  .blob-outer-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    inset: 0;
+    margin: auto;
+    filter: blur(100px);
+>>>>>>> bda03e1e79498cf71cd51ae0af7b0bb5a054d607
 
-  
+  }
+
+  .blob-inner-container {
+    border-radius: 99999px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    min-width: 1000px;
+    overflow: hidden;
+    background: "000000"
+    transform: scale(0.8);
+
+  }
+
+  .blob {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    margin: auto;
+    background: conic-gradient(from 0deg, #ffb0c4, #ffc074, #fff081, #7bff7b, #8bb9ff, #ac94ff);
+    animation: spinBlob 8s linear infinite;
+
+  }
+
+  @keyframes spinBlob {
+    0% {
+      transform: rotate(0deg) scale(2);
+    }
+
+    100% {
+      transform: rotate(1turn) scale(2);
+    }
+
+  }
