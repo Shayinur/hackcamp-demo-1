@@ -1,0 +1,70 @@
+* {
+    font-family: "Inter", sans-serif;
+  }
+  
+  body {
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 40px;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  .subtitle-container {
+    text-align: left;
+    margin-top: 65px;
+  }
+  
+  .section-title {
+    text-align: left;
+    padding-top: 50px;
+  }
+  
+  button {
+    background-color: #1ed760;
+    color: #121212;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px; /* spacing between subtitle and button */
+  }
+  
+  .playlist {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .playlist-info {
+    text-align: left;
+    padding-left: 15px;
+    margin: 0;
+  }
+  
+  .navbar {
+    margin-top: 45px;
+  }
+  
+  .playlist-subtitle {
+    color: grey;
+  }
+  
+
+  .spotify-purple {
+    background-color: purple;
+  }
