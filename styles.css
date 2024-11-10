@@ -81,14 +81,20 @@
   
   button {
     background-color: #DCD2D3;
-    color: #121212;
+    color: #000000;
     border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 16px;
+    padding: 20px 40px; /* Increase padding for a larger button */
+    border-radius: 30px; /* Adjust border radius for a more rounded look */
+    font-size: 24px; /* Increase font size */
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px; /* spacing between subtitle and button */
+    margin-top: 20px; /* Add more spacing from elements above */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #EEE7E0; /* Change color on hover */
+    transform: translateY(-5px) scale(1.05); /* Slight lift and zoom effect */
   }
   
   /*
@@ -113,7 +119,7 @@
   right: -300px; /* Start off-screen to the right for sliding animation */
   width: 260px; /* Adjust width as needed */
   height: calc(100% - 80px); /* Adjust height to leave space for top and bottom */
-  background-color: #f0f0f0;
+  background-color: ##ffffff;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
   transition: right 0.3s ease; /* Keep the sliding animation */
