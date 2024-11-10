@@ -42,13 +42,32 @@
 
     <div id="sidebar" class="sidebar">
         <h2>Choose a Cause</h2>
-        <ul>
-          <li>🌍 International Affairs</li>
-          <li>👶 Children & Women</li>
-          <li>🏥 Healthcare</li>
-          <li>🐾 Animal Welfare</li>
+        <ul id="cause-list">
+          <li data-cause="international-affairs">🌍 International Affairs</li>
+          <li data-cause="children-women">👶 Children & Women</li>
+          <li data-cause="healthcare">🏥 Healthcare</li>
+          <li data-cause="animal-welfare">🐾 Animal Welfare</li>
         </ul>
+
+          <!-- Charity details section -->
+    <div id="charity-details" class="hidden">
+        
+        <h2 id="selected-charity-name"></h2>
+        <img id="selected-charity-icon" src="" alt="Charity Icon" style="width: 50px; height: 50px;" />
+        <p id="selected-charity-description"></p>
+        <button id="add-to-tree">Add to My Tree</button>
+        <button id="clear-all">Clear All</button>
       </div>
+
+        <!-- Section to display specific charity organizations -->
+    <div id="charity-list" class="hidden">  
+        <h2 id="charity-title"></h2>
+        <ul id="charity-items"></ul>
+        <button id="back-to-charity-list">← Back</button>
+    </div>
+  
+    
+</div>
 
     <button class="menu-toggle" id="menu-toggle"> Start Decorating! </button>
   </body>
