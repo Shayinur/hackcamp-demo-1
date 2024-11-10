@@ -38,17 +38,25 @@
           <li data-cause="animal-welfare">🐾 Animal Welfare</li>
         </ul>
 
-        <!-- Section to display specific charity organizations -->
-  <div id="charity-list" class="hidden">
-    
-    <h2 id="charity-title"></h2>
-    <ul id="charity-items"></ul>
-    <button id="back-button">← Back</button>
-  </div>
-</div>
+          <!-- Charity details section -->
+    <div id="charity-details" class="hidden">
+        
+        <h2 id="selected-charity-name"></h2>
+        <img id="selected-charity-icon" src="" alt="Charity Icon" style="width: 50px; height: 50px;" />
+        <p id="selected-charity-description"></p>
+        <button id="add-to-tree">Add to My Tree</button>
+        <button id="clear-all">Clear All</button>
       </div>
 
-
+        <!-- Section to display specific charity organizations -->
+    <div id="charity-list" class="hidden">  
+        <h2 id="charity-title"></h2>
+        <ul id="charity-items"></ul>
+        <button id="back-to-charity-list">← Back</button>
+    </div>
+  
+    
+</div>
 
     <button class="menu-toggle" id="menu-toggle"> Start Decorating! </button>
   </body>
