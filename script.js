@@ -5,15 +5,14 @@ const causeList = document.getElementById('cause-list');
 const charityList = document.getElementById('charity-list');
 const charityTitle = document.getElementById('charity-title');
 const charityItems = document.getElementById('charity-items');
-const backButton = document.getElementById('back-button');
+const backButton = document.getElementById('back-button')
+const tree = document.getElementById('tree-container');
 
 // Toggle sidebar visibility
 menuToggle.addEventListener('click', () => {
   sidebar.classList.toggle('active');
 });
 
-<<<<<<< HEAD
-=======
 
 // Define charity organizations for each cause
 const charities = {
@@ -58,4 +57,3 @@ backButton.addEventListener('click', () => {
 
 console.log(`Clicked on cause: ${cause}`);
 console.log(`Charity list for ${cause}:`, charities[cause]);
->>>>>>> 8e7f7c2ce14653a1da2ab669dedc462e64583f28
