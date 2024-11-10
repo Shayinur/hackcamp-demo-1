@@ -1,36 +1,68 @@
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: "Inter", sans-serif;
   }
   
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1a1a2e;
+    color: #fff;
+  } 
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-links li a:hover {
+    color: #f0a500;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
   body {
-    background-color: #121212;
-    color: white;
+    background-color: white;
+    color: black;
     text-align: center;
     margin: 0;
-    padding: 40px;
+    padding: 0px;
   }
   
+  /*
   .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     text-align: left;
     margin-bottom: 20px;
-  }
+  } */
   
   h1 {
     font-size: 32px;
   }
   
+  /*
   .subtitle-container {
     text-align: left;
     margin-top: 65px;
-  }
+  } */
   
+  /*
   .section-title {
     text-align: left;
     padding-top: 50px;
-  }
+  } */
+  
   
   button {
     background-color: #1ed760;
@@ -44,27 +76,22 @@
     margin-top: 10px; /* spacing between subtitle and button */
   }
   
+  /*
   .playlist {
     display: flex;
     align-items: center;
     margin-top: 10px;
-  }
-  
+  } */
+
+
+  /*
   .playlist-info {
     text-align: left;
     padding-left: 15px;
     margin: 0;
-  }
+  }  */
   
-  .navbar {
-    margin-top: 45px;
-  }
-  
-  .playlist-subtitle {
-    color: grey;
-  }
+ 
   
 
-  .spotify-purple {
-    background-color: purple;
-  }
+  
