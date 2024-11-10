@@ -6,6 +6,7 @@
   }
   
   .navbar {
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,6 +115,19 @@
   
 /* Sidebar styles */
 .sidebar {
+
+    position: fixed;
+    top: 40px;
+    right: -300px;
+    width: 300px;
+    height: calc(100% - 40px);
+    background-color: #f0f0f0;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 900;
+  }
+=======
   position: fixed;
   top: 40px; /* Spacing from the top */
   right: -300px; /* Start off-screen to the right for sliding animation */
@@ -145,6 +159,53 @@
 .sidebar.active {
   right: 40px; /* Adjust this to match the floating position */
 }
+
+
+  .sidebar h2 {
+    color: #1a1a2e;
+    margin-bottom: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  /* Active sidebar (visible) */
+  .sidebar.active {
+    right: 0;
+  }
+
+
+
+
+  /* Hide the charity list initially */
+
+.hidden {
+    display: none;
+  }
+
+  /*
+.block {
+    display: block;
+}  */
+  
+  /* Back button style */
+  #back-button {
+    margin-bottom: 10px;
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+ 
 
    /* Animated mesh background */
   .blob-outer-container {
