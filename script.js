@@ -1,6 +1,8 @@
-const toggleButtons = document.getElementsByClassName('toggle');
-const body = document.body;
+// Get elements
+const menuToggle = document.getElementById('menu-toggle');
+const sidebar = document.getElementById('sidebar');
 
-toggleButtons[0].addEventListener('click', () => {
-    body.classList.toggle('spotify-purple'); 
+// Toggle sidebar visibility
+menuToggle.addEventListener('click', () => {
+  sidebar.classList.toggle('active');
 });
