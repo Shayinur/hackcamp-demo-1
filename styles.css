@@ -129,19 +129,25 @@
   
 /* Sidebar styles */
 .sidebar {
+  position: fixed;
+  top: 80px; /* Space from the top */
+  right: -400px; /* Initially hidden off-screen */
+  width: 400px;
+  height: calc(100% - 160px); /* Leave space at the top and bottom */
+  min-height: 500px; /* Set a minimum height */
+  max-height: 80vh; /* Prevent the sidebar from becoming too tall */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent background */
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 900;
+}
 
-    position: fixed;
-    top: 220px;
-    right: -400px;
-    width: 400px;
-    border-radius: 20px;
-    height: calc(100% - 450px);
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    transition: right 0.3s ease;
-    z-index: 900;
-  }
+.sidebar.active {
+  right: 50px; /* Show the sidebar with space on the right */
+}
 =======
   position: fixed;
   top: 40px; /* Spacing from the top */
@@ -156,10 +162,6 @@
   z-index: 0;
 }
 
-/* Active sidebar (visible) */
-.sidebar.active {
-  right: 40px; /* Adjust this to match the floating position */
-}
 
 .sidebar h2 {
   color: #453d3d;
