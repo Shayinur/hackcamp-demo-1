@@ -237,8 +237,57 @@
     right: 0;
   }
 
+/* Style for the list items to look like buttons in the charity list */
+#charity-items {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+#charity-items li {
+  background-color: #ffffff;
+  color: #453d3d;
+  width: 80%; /* Adjust button width */
+  border: none;
+  padding: 15px 20px; /* Similar padding to make buttons larger */
+  border-radius: 30px; /* Rounded corners */
+  font-size: 18px; /* Adjust font size */
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Drop shadow like the main button */
+  cursor: pointer;
+  margin-bottom: 20px; /* Spacing between buttons */
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
+#charity-items li:hover {
+  background-color: #EEE7E0; /* Match hover color with main button */
+  transform: translateY(-5px) scale(1.05); /* Slight lift and zoom effect */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Intensify shadow on hover */
+}
+
+/* Style for selected charity details */
+#selected-charity-name {
+  font-size: 24px; /* Larger title */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#selected-charity-description {
+  font-size: 20px; /* Increase font size */
+  text-align: center; /* Center align the text */
+  margin-top: 20px; /* Add space above */
+  margin-bottom: 20px; /* Add space below */
+}
+
+#selected-charity-icon {
+  display: block;
+  margin: 20px auto; /* Center the icon */
+}
 
   /* Hide the charity list initially */
 
