@@ -46,6 +46,7 @@ causeList.addEventListener('click', (event) => {
     const cause = event.target.dataset.cause;
     if (charities[cause]) {
       causeList.classList.add('hidden');
+      console.log(causeList)
       charityList.classList.remove('hidden');
       charityTitle.textContent = event.target.textContent;
 

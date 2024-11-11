@@ -243,7 +243,7 @@
   /* Hide the charity list initially */
 
 .hidden {
-    display: none;
+    display: none !important;
   }
 
   /*
