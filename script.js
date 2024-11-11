@@ -96,12 +96,12 @@ addToTreeButton.addEventListener('click', () => {
       const containerHeight = overlayContainer.offsetHeight;
   
       // Calculate central placement area
-      const centerX = containerWidth / 2;
-      const centerY = containerHeight / 2;
+      const centerX = (containerWidth / 2) - 25;
+      const centerY = (containerHeight / 2) - 100;
   
       // Set randomX and randomY within a central range around the center of the container
-      const rangeX = 0.3 * containerWidth; // Width range within 30% of container width
-      const rangeY = 0.4 * containerHeight; // Height range within 40% of container height
+      const rangeX = 0.12 * containerWidth; // Width range within 30% of container width
+      const rangeY = 0.50 * containerHeight; // Height range within 40% of container height
   
       const randomX = centerX + Math.floor(Math.random() * rangeX - rangeX / 2);
       const randomY = centerY + Math.floor(Math.random() * rangeY - rangeY / 2);
