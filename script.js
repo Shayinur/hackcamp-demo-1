@@ -88,20 +88,20 @@ addToTreeButton.addEventListener('click', () => {
       icon.src = currentCharityIconUrl;
       icon.alt = "Charity icon";
       icon.style.position = 'absolute';
-      icon.style.width = '50px'; // Adjust icon size if needed
-      icon.style.height = '50px';
+      icon.style.width = '80px'; // Adjust icon size if needed
+      icon.style.height = '80px';
   
       // Get the overlay container dimensions
       const containerWidth = overlayContainer.offsetWidth;
       const containerHeight = overlayContainer.offsetHeight;
   
       // Calculate central placement area
-      const centerX = containerWidth / 2;
-      const centerY = containerHeight / 2;
+      const centerX = (containerWidth / 2) - 25;
+      const centerY = (containerHeight / 2) - 100;
   
       // Set randomX and randomY within a central range around the center of the container
-      const rangeX = 0.3 * containerWidth; // Width range within 30% of container width
-      const rangeY = 0.4 * containerHeight; // Height range within 40% of container height
+      const rangeX = 0.12 * containerWidth; // Width range within 30% of container width
+      const rangeY = 0.50 * containerHeight; // Height range within 40% of container height
   
       const randomX = centerX + Math.floor(Math.random() * rangeX - rangeX / 2);
       const randomY = centerY + Math.floor(Math.random() * rangeY - rangeY / 2);
