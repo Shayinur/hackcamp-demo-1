@@ -88,8 +88,8 @@ addToTreeButton.addEventListener('click', () => {
       icon.src = currentCharityIconUrl;
       icon.alt = "Charity icon";
       icon.style.position = 'absolute';
-      icon.style.width = '50px'; // Adjust icon size if needed
-      icon.style.height = '50px';
+      icon.style.width = '80px'; // Adjust icon size if needed
+      icon.style.height = '80px';
   
       // Get the overlay container dimensions
       const containerWidth = overlayContainer.offsetWidth;
