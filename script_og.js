@@ -15,10 +15,10 @@ menuToggle.addEventListener('click', () => {
 
 // Define charity organizations for each cause
 const charities = {
-    'international-affairs': ['American Red Cross', 'World Vision', 'Doctors Without Borders'],
-    'children-women': ['Save the Children', 'UNICEF', 'B.C. Children’s & Women’s Hospital'],
-    'healthcare': ['Vancouver General Hospital', 'Canadian Mental Health Association', 'Canadian Cancer Society'],
-    'animal-welfare': ['BCSPCA', 'Therapeutic Paws of Canada', 'World Wildlife Fund']
+    'International Affairs': ['American Red Cross', 'World Vision', 'Doctors Without Borders'],
+    'Children/Women': ['Save the Children', 'UNICEF', 'B.C. Children’s & Women’s Hospital'],
+    'Healthcare': ['Vancouver General Hospital', 'Canadian Mental Health Association', 'Canadian Cancer Society'],
+    'Animal Welfare': ['BCSPCA', 'Therapeutic Paws of Canada', 'World Wildlife Fund']
   };
 
 // Handle cause click to show specific charities
