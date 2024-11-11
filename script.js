@@ -25,7 +25,9 @@ const charities = {
   'international-affairs': [
     { name: 'American Red Cross', description: 'Helps in disaster relief and emergency assistance.', icon: 'images/tartlet.png' },
     { name: 'World Vision', description: 'Supports children and families in poverty.', icon: 'images/leaf_angle.png' },
-    { name: 'Doctors Without Borders', description: 'Provides medical aid in crisis regions.', icon: 'images/gift_#1.png' }
+    { name: 'Doctors Without Borders', description: 'Provides medical aid in crisis regions.', icon: 'images/socks.png' },
+    { name: 'Heart to Heart Africa', description: 'Advocating for orphans and economically disadvantaged children in Tanzania.', icon: 'images/christmas ball.png' },
+    { name: 'Plan International Canada', description: 'Supports children wherever they are oppressed, exploited, left behind or not equally valued', icon: 'images/gingerbread-man-2595902.png' }
   ],
   'children-women': [
     { name: 'Save the Children', description: 'Works to improve children’s lives.', icon: 'images/leaf_angel.png' },
