@@ -138,3 +138,21 @@ backButton.addEventListener('click', () => {
 });
 
 
+
+// Get elements
+document.addEventListener('DOMContentLoaded', () => {
+  const shareButton = document.getElementById('share-button');
+  const sharePopup = document.getElementById('share-popup');
+  const closePopup = document.getElementById('close-popup');
+
+  // Show pop-up when "Share" is clicked
+  shareButton.addEventListener('click', () => {
+    console.log('Clicked!');
+    sharePopup.classList.remove('hidden'); // Remove the hidden class to show pop-up
+  });
+
+  // Close pop-up when the close button is clicked
+  closePopup.addEventListener('click', () => {
+    sharePopup.classList.add('hidden'); // Add the hidden class to hide pop-up
+  });
+})

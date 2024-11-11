@@ -39,10 +39,22 @@
         <div class="logo">OrnaMission</div>
         <ul class="nav-links">
             <li><a href="#about us">About</a></li>
-            <li><a href="#share with friends">Share</a></li>
+            <li onclick="
+            document.getElementById('share-popup').classList.remove('hidden')"><a href="#share with friends">Share</a></li>
             <li><a href="#contact us">Contact Us</a></li>
         </ul>
     </nav>
+
+
+  <!-- Pop-up window for sharing -->
+  <div id="share-popup" class="popup hidden">
+    <div class="popup-content">
+      <span onclick="document.getElementById('share-popup').classList.add('hidden')" id="close-popup" class="close-popup">&times;</span>
+      <h2>Your Tree Snapshot</h2>
+      <img src="images/tree.png" alt="Tree Snapshot" class="screenshot">
+      <button>share with your friends!</button>
+    </div>
+  </div>
 
     <div class="tree-container" style="position: relative;">
         <!-- Overlay container for charity icons, positioned absolutely within the tree container -->
@@ -84,3 +96,5 @@
   </body>
   <script src="script.js"></script>
 </html>
+
+
